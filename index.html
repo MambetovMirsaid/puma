@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puma</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -16,6 +17,11 @@
   <body>
     <header class="header">
       <div class="wrapper header__wrapper">
+        <img
+          src="images/burger.svg"
+          alt="burger-button"
+          class="burger-button"
+        />
         <ul class="list">
           <li class="list-item">Woman</li>
           <li class="list-item">Men</li>
@@ -31,6 +37,10 @@
           <i class="icon fa-regular fa-heart"></i>
           <i class="icon fa-solid fa-bag-shopping"></i>
           <img class="profile-image" src="images/profile.jpg" alt="profile" />
+        </div>
+        <div class="header__icons-mobile">
+          <i class="icon fa-solid fa-magnifying-glass"></i>
+          <i class="icon fa-solid fa-bag-shopping"></i>
         </div>
       </div>
     </header>
@@ -148,6 +158,7 @@
               </button>
             </div>
           </div>
+          <button class="btn btn-big">View All</button>
         </div>
       </section>
 
@@ -161,6 +172,7 @@
 
       <section class="variety">
         <div class="wrapper variety-wrapper">
+          <h2 class="variety__title">More To Explore</h2>
           <div class="puma-types">
             <img class="type-img" src="images/type1.jpg" alt="" />
             <h3 class="type-title">T-shorts & tees</h3>
@@ -173,6 +185,7 @@
             <img class="type-img" src="images/type3.jpg" alt="" />
             <h3 class="type-title">Track Pants</h3>
           </div>
+          <button class="btn btn-big">VIEW MORE</button>
         </div>
       </section>
 
@@ -188,86 +201,92 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer footer-dekstop">
       <div class="wrapper">
-        <div class="footer-top">
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Customer service </a>
+        <div class="footer__top">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Customer service </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Shipping and Delivery </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Shipping and Delivery </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Return Policy </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Return Policy </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> FAQs </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> FAQs </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Contact Us </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Contact Us </a>
             </li>
           </ul>
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Service Discount </a>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Service Discount </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Student Discount </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Student Discount </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Privacy Policy </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Privacy Policy </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Terms & Conditions </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Terms & Conditions </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link">
                 Purchase a Digital Gift Card
               </a>
             </li>
           </ul>
-          <ul class="footer-list">
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Company </a>
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Company </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Corporate News </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Corporate News </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Press Center </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Press Center </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Statement on COVID-19 </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Statement on COVID-19 </a>
             </li>
-            <li class="footer-list-item">
-              <a href="#" class="footer-list-link"> Store locator </a>
+            <li class="footer__list-item">
+              <a href="#" class="footer__list-link"> Store locator </a>
             </li>
           </ul>
-          <div class="footer-contacts">
-            <h3 class="contacts-title">Join PUMA</h3>
-            <p class="contacts-text">
+          <div class="footer__contacts">
+            <h3 class="contacts__title">Join PUMA</h3>
+            <p class="contacts__text">
               Sign up for emails to get special news and exclusive Puma offers.
             </p>
-            <div class="footer-email-input">
+            <div class="footer__email-input">
               <input
                 type="email"
-                class="email-input"
+                class="email__input"
                 placeholder="Email Address"
               />
-              <button class="btn btn-black email-btn">
+              <button class="btn btn-black email__btn">
                 <i class="fa-solid fa-arrow-right-long"></i>
               </button>
             </div>
+
             <div class="footer__social-icons">
               <img
-                src="images/svg/Facebook.svg"
+                src="images/svg/facebook.svg"
                 alt="facebook"
                 class="social-icon"
               />
               <img
                 src="images/svg/instagram.svg"
                 alt="instagram"
+                class="social-icon"
+              />
+              <img
+                src="images/svg/twitter.svg"
+                alt="twitter"
                 class="social-icon"
               />
               <img
@@ -281,11 +300,6 @@
                 class="social-icon"
               />
               <img
-                src="images/svg/twitter.svg"
-                alt="twitter"
-                class="social-icon"
-              />
-              <img
                 src="images/svg/youtube.svg"
                 alt="youtube"
                 class="social-icon"
@@ -294,24 +308,87 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <img
-          src="images/svg/Location.svg"
-          alt="location"
-          class="location-icon"
-        />
-        <p class="location">United States</p>
-        <p class="puma-se">© PUMA SE, 2020. All Rights Reserved.</p>
-        <div class="pay">
-          <img src="images/Amex.png" alt="Amex" class="Amex" />
-          <img
-            src="images/Mastercard.png"
-            alt="Mastercard"
-            class="Mastercard"
-          />
-          <img src="images/PayPal.png" alt="PayPal" class="PayPal" />
-          <img src="images/Apple Pay.png" alt="Apple Pay" class="ApplePay" />
-          <img src="images/Visa Card.png" alt="Visa Card" class="VisaCard" />
+
+      <div class="footer__bottom">
+        <div class="wrapper footer__bottom-wrapper">
+          <p class="footer__address">
+            <i class="location-mark fa-solid fa-location-dot"></i>
+            United States
+          </p>
+          <p class="footer__copyright">© PUMA SE, 2020. All Rights Reserved.</p>
+
+          <div class="footer__payment">
+            <img src="images/Amex.png" alt="amex" class="payment-img" />
+            <img
+              src="images/Mastercard.png"
+              alt="mastercard"
+              class="payment-img"
+            />
+            <img src="images/PayPal.png" alt="paypal" class="payment-img" />
+            <img
+              src="images/Apple Pay.png"
+              alt="apple-pay"
+              class="payment-img"
+            />
+            <img src="images/Visa Card.png" alt="visa" class="payment-img" />
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <footer class="footer footer-mobile">
+      <div class="wrapper">
+        <div class="footer__top">
+          <div class="support">
+            <h3>Support</h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+          <div class="about-pume">
+            <h3>About Puma</h3>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <p class="footer__address">
+            <i class="location-mark fa-solid fa-location-dot"></i>
+            United States
+          </p>
+        </div>
+        <div class="footer-line"></div>
+
+        <div class="footer__bottom">
+          <div class="footer__social-icons">
+            <img
+              src="images/svg/facebook.svg"
+              alt="facebook"
+              class="social-icon"
+            />
+            <img
+              src="images/svg/instagram.svg"
+              alt="instagram"
+              class="social-icon"
+            />
+            <img
+              src="images/svg/twitter.svg"
+              alt="twitter"
+              class="social-icon"
+            />
+            <img
+              src="images/svg/linkedin.svg"
+              alt="linkedin"
+              class="social-icon"
+            />
+            <img
+              src="images/svg/pinterest.svg"
+              alt="pinterest"
+              class="social-icon"
+            />
+            <img
+              src="images/svg/youtube.svg"
+              alt="youtube"
+              class="social-icon"
+            />
+          </div>
+          <p class="footer__copyright">© PUMA SE, 2020. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
